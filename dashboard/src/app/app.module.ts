@@ -10,12 +10,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FilterTabComponent
+    FilterTabComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
