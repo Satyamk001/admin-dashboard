@@ -1,0 +1,25 @@
+::ng-deep .mat-mdc-text-field-wrapper {
+  --mdc-outlined-text-field-caret-color: white; 
+  --mdc-outlined-text-field-focus-outline-color: white; 
+  --mdc-outlined-text-field-focus-label-text-color: white;
+}
+
+.filter{
+      color: white;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+height: 9vh;
+.search-field {
+  border-radius: 88px;
+  height: 80%;
+  input {
+    padding-left: 10px;
+  }
+  .serach-btn{
+      color: white;
+  }
+}
+
+}
