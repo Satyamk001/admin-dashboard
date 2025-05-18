@@ -1,0 +1,15 @@
+<nav [ngClass]="{'sidebar-expand':sidebarExpandable}">
+    <div class="logo">
+        <img src="/assets/logo.png" alt="Company Logo">
+        <h1>Company</h1>
+    </div>
+    <p (click)="sidebarExpandable=!sidebarExpandable"><img src="/assets/menu-burger-horizontal-svgrepo-com.svg" alt="Hamburger icon"></p>
+    <ul>
+        <li><img src="/assets/dashboard.svg" alt="Dashboard"><p>Dashboard</p> </li>
+        <li><img src="/assets/bar-chart-svgrepo-com.svg" alt="Analytics"> <p>Analytics</p></li>
+        <li><img src="/assets/wallet.svg" alt="Wallet"><p>Wallet</p> </li>
+        <li><img src="/assets/logout-svgrepo-com.svg" alt="Logout"><p>Logout</p></li>
+    </ul>
+    
+
+</nav>
