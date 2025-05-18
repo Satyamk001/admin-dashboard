@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./side-nav.component.scss']
 })
 export class SideNavComponent {
-  sidebarExpandable = false;
+  sidebarExpandable = true;
 }
