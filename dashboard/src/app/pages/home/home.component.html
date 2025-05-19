@@ -5,10 +5,24 @@
     <div class="home-banner">
         <h1 class="banner-heading">Redefining Digital Ownership in the Decentralized Era.</h1>
     </div>
-    <div class="wallet">
+    <div class="main-section">
+      <div class="wallet">
          <h3 class="wallet-heading">Wallet</h3>
          <div class="">
          <h2 class="wallet-price">{{walletPrice}}</h2>
          </div>
+    </div>
+    
+    <div class="trending-coins">
+      <app-price-card
+  [icon]="'https://www.blockchain.com/explorer/_next/static/media/bitcoin.df7c9480.svg'"
+  [name]="'Bitcoin'"
+  [shortName]="'BTC'"
+  [price]="'$102,976'"
+  [change]="'-0.83%'"
+  [button]="'Trade'">
+</app-price-card>
+
+    </div>
     </div>
 </section>
