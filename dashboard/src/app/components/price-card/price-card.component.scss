@@ -1,0 +1,50 @@
+.course-card {
+  display: flex;
+  justify-content: space-between;
+  background: hwb(0 29% 38%);
+//   background: #2a2a2a;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  align-items: center;
+//   width: 250px;
+//   position: absolute;
+//   top: 0;
+
+  .icon {
+    mat-icon {
+      font-size: 40px;
+      color: lightgreen;
+    }
+  }
+
+  .info {
+    flex-grow: 1;
+    padding: 0 1rem;
+
+    h3 {
+      margin: 0;
+    }
+
+   
+  }
+
+  .status {
+    span {
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+      font-size: 0.8rem;
+
+      &.completed {
+        background: #a3f7b5;
+        color: black;
+      }
+
+      &.in-progress {
+        background: #444;
+        color: white;
+      }
+    }
+  }
+}

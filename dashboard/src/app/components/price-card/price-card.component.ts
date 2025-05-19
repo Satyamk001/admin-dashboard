@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-price-card',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./price-card.component.scss']
 })
 export class PriceCardComponent {
-
+  @Input() icon!: string;
+  @Input() name!: string;
+  @Input() name2!: string;
+  @Input() progress!: number;
+  @Input() grade?: string;
+  @Input() status!: 'Trade' | 'Not-Allowed';
 }
