@@ -1,13 +1,17 @@
+<section class="main-layout">
 <div class="main-container">
 <app-side-nav
 (sidenavToggle)="onSidenavToggle()"
 [class.slidebar]="sidenavOpen" 
 ></app-side-nav>
+<div class="right-section">
 <app-navbar 
 class="content"
       [class.full-width]="sidenavOpen===false"
       [class.translucent]="sidenavOpen"
 [title]="'Home'"></app-navbar>
+<app-analytics/>
+</div>
 </div>
 
-<app-analytics/>
+</section>
