@@ -13,6 +13,7 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { HomeComponent } from './pages/home/home.component';
 import { AnalyticsComponent } from './pages/analytics/analytics.component';
 import { SubscriptionComponent } from './pages/subscription/subscription.component';
+import { PriceCardComponent } from './components/price-card/price-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SubscriptionComponent } from './pages/subscription/subscription.compone
     SideNavComponent,
     HomeComponent,
     AnalyticsComponent,
-    SubscriptionComponent
+    SubscriptionComponent,
+    PriceCardComponent
   ],
   imports: [
     BrowserModule,
