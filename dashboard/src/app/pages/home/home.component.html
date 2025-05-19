@@ -7,43 +7,67 @@
     </div>
     <div class="main-section">
         <div class="wallet">
-            <h3 class="wallet-heading">Wallet</h3>
+            <div class="first-row">
+                <p class="wallet-heading">Wallet</p>
+                <mat-icon class="refresh-icon">refresh</mat-icon>
+            </div>
+            <h1 class="wallet-info">{{walletPrice}}</h1>
+            <div class="wallet-buttons">
+                <div class="button-individual">
+                    <button class="wallet-button"><mat-icon>arrow_upward</mat-icon>
+                    </button>
+                    <p>Send</p>
+                </div>
+                <div class="button-individual">
+                    <button class="wallet-button"><mat-icon>arrow_downward</mat-icon>
+                    </button>
+                    <p>Receive</p>
+                </div>
+                <div class="button-individual">
+                    <button class="wallet-button"><mat-icon>sync_alt</mat-icon></button>
+                    <p>Swap</p>
+                </div>
+                <div class="button-individual">
+                    <button class="wallet-button"> <mat-icon>shopping_cart</mat-icon>
+                    </button>
+                    <p>Buy & Sell</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="trending-coins">
+            <div class="section-header">
+                <div class="section-left">
+                    <h1>Explore More</h1>
+                </div>
+                <div class="section-right">
+                    View All
+                </div>
+            </div>
+            <div *ngFor="let crypto of cryptocurrencies">
+                <app-price-card [icon]="crypto.icon" [name]="crypto.name" [shortName]="crypto.shortName"
+                    [price]="crypto.price" [change]="crypto.change" [button]="crypto.button">
+                </app-price-card>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- <h3 class="wallet-heading">Wallet</h3>
             <div class="wallet-info">
                 <h2 class="wallet-price">{{walletPrice}}</h2>
                 <p class="price-update"><span class="price">{{priceUpdate}}</span> <span
                         class="update-perc">({{percentageUpdate}})</span> </p>
-            </div>
-            <div class="wallet-buttons">
-                <button class="wallet-button"><mat-icon>add</mat-icon><p class="button-text">Buy</p></button>
-                <button class="wallet-button"><mat-icon>remove</mat-icon><p>Sell</p></button>
-                <button class="wallet-button"><mat-icon>sync_alt</mat-icon><p>Swap</p></button>
-                <button class="wallet-button"><mat-icon>download</mat-icon><p>Download</p></button>
-            </div>
-        </div>
-
-         
-      
-    
-    <div class="trending-coins">
-      <div class="section-header">
-        <div class="section-left">
-          <h1>Explore More</h1>
-        </div>
-        <div class="section-right">
-          View All
-        </div>
-      </div>
-      <div *ngFor="let crypto of cryptocurrencies">
-      <app-price-card
-      [icon]="crypto.icon"
-      [name]="crypto.name"
-      [shortName]="crypto.shortName"
-      [price]="crypto.price"
-      [change]="crypto.change"
-      [button]="crypto.button">
-      </app-price-card>
-      </div>
-
-    </div>
-    </div>
-</section>
+            </div> -->
+<!-- <div class="wallet-buttons">
+                <button class="wallet-button"><mat-icon>add</mat-icon></button>
+                <button class="wallet-button"><mat-icon>remove</mat-icon></button>
+                <button class="wallet-button"><mat-icon>sync_alt</mat-icon></button>
+                <button class="wallet-button"><mat-icon>download</mat-icon></button>
+            </div> -->
