@@ -21,11 +21,29 @@
             </div>
         </div>
 
-        <div class="trending-coins">
-            <app-price-card [icon]="'https://www.blockchain.com/explorer/_next/static/media/bitcoin.df7c9480.svg'"
-                [name]="'Bitcoin'" [shortName]="'BTC'" [price]="'$102,976'" [change]="'-0.83%'" [button]="'Trade'">
-            </app-price-card>
-
+         
+      
+    
+    <div class="trending-coins">
+      <div class="section-header">
+        <div class="section-left">
+          <h1>Explore More</h1>
         </div>
+        <div class="section-right">
+          View All
+        </div>
+      </div>
+      <div *ngFor="let crypto of cryptocurrencies">
+      <app-price-card
+      [icon]="crypto.icon"
+      [name]="crypto.name"
+      [shortName]="crypto.shortName"
+      [price]="crypto.price"
+      [change]="crypto.change"
+      [button]="crypto.button">
+      </app-price-card>
+      </div>
+
+    </div>
     </div>
 </section>
