@@ -1,0 +1,11 @@
+<div class="main-container">
+<app-side-nav
+(sidenavToggle)="onSidenavToggle()"
+[class.slidebar]="sidenavOpen" 
+></app-side-nav>
+<app-navbar 
+class="content"
+      [class.full-width]="sidenavOpen===false"
+      [class.translucent]="sidenavOpen"
+[title]="'Home'"></app-navbar>
+</div>
