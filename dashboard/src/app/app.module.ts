@@ -12,6 +12,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AnalyticsComponent } from './pages/analytics/analytics.component';
+import { SubscriptionComponent } from './pages/subscription/subscription.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { HomeComponent } from './pages/home/home.component';
     NavbarComponent,
     FilterTabComponent,
     SideNavComponent,
-    HomeComponent
+    HomeComponent,
+    AnalyticsComponent,
+    SubscriptionComponent
   ],
   imports: [
     BrowserModule,

@@ -15,23 +15,36 @@
 
   .actions {
     display: flex;
-    align-items: center;
-    gap: 16px;
-  }
+    align-items:center;
+    gap: 25px;
+    justify-content: space-between;
+      mat-icon {
+        color: #999;
+        font-size: 20px;
+        margin-right: 6px;
+      }
+    
 
-  .meeting-btn {
-    background-color: #1f1f1f;
-    color: white;
+    .notification-bell {
+      font-size: 26px;
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.3s;
 
-    mat-icon {
-      margin-left: 6px;
+      &:hover {
+        color: #ffffff;
+      }
     }
-  }
-
-  .avatar {
+     .avatar {
     width: 36px;
     height: 36px;
     border-radius: 50%;
     object-fit: cover;
   }
+  }
+
+  
+  
+
+ 
 }
