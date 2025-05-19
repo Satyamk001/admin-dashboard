@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  sidenavOpen : boolean = true;
-   onSidenavToggle(): void {
-    this.sidenavOpen = !this.sidenavOpen;
-  }
+ 
 }
