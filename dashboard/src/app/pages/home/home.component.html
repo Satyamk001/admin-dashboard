@@ -13,6 +13,26 @@
          </div>
     </div>
     
-   
+    <div class="trending-coins">
+      <div class="section-header">
+        <div class="section-left">
+          <h1>Explore More</h1>
+        </div>
+        <div class="section-right">
+          View All
+        </div>
+      </div>
+      <div *ngFor="let crypto of cryptocurrencies">
+      <app-price-card
+      [icon]="crypto.icon"
+      [name]="crypto.name"
+      [shortName]="crypto.shortName"
+      [price]="crypto.price"
+      [change]="crypto.change"
+      [button]="crypto.button">
+      </app-price-card>
+      </div>
+
+    </div>
     </div>
 </section>
