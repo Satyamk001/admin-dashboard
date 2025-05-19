@@ -8,50 +8,81 @@
 
 
   .title {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
+    font-size: 34px;
+    font-weight: 600;
+    color: #c0c0c2;
+
   }
 
-  .actions {
+  ::ng-deep .actions {
     display: flex;
-    align-items:center;
+    align-items: center;
     gap: 25px;
     justify-content: space-between;
-      mat-icon {
-        color: #999;
-        font-size: 20px;
-        margin-right: 6px;
-      }
-    
 
-.notification      {
-  width: 40px;
-  height: 40px;
-  border: 1px solid #2b2b2b;
+    mat-icon {
+      color: #999;
+      font-size: 20px;
+      margin-right: 6px;
+    }
+
+    .mat-mdc-text-field-wrapper {
+      border-radius: 20px;
+      font-size: 14px;
+      height: 40px;
+      width: 236px;
+      --mdc-filled-text-field-focus-active-indicator-color: white
+      --mdc-filled-text-field-focus-label-text-color: white;
+      --mdc-filled-text-field-caret-color: white;
+    }
+
+    .mat-mdc-form-field-subscript-wrapper {
+      display: none;
+      box-sizing: border-box;
+      width: 100%;
+      position: relative;
+    }
+
+    .mdc-text-field--no-label:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mat-mdc-form-field-infix {
+      padding-top: 12px;
+      padding-bottom: 16px;
+    }
+
+
+    .notification {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #2b2b2b;
       border-radius: 50%;
-     padding: 6px;
-     background-color: #2b2b2b;
-    .notification-bell {
-      font-size: 26px;
-      color: #ccc;
-      cursor: pointer;
-      transition: color 0.3s;
-      
-      &:hover {
-        color: #ffffff;
+      //  padding: 6px;
+      background-color: #2b2b2b;
+
+      .notification-bell {
+        font-size: 20px;
+        margin-right: 0px;
+        color: #ccc;
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #ffffff;
+        }
       }
-    }}
-     .avatar {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    object-fit: cover;
-  }
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
   }
 
-  
-  
 
- 
+
+
+
 }

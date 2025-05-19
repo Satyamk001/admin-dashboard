@@ -2,9 +2,11 @@
   --mdc-outlined-text-field-caret-color: white; 
   --mdc-outlined-text-field-focus-outline-color: white; 
   --mdc-outlined-text-field-focus-label-text-color: white;
-  --mdc-outlined-text-field-outline-color: red !important;
   // border: 2px solid green;
-  border-radius: 50px !important;
+}
+::ng-deep .mat-mdc-text-field-wrapper
+ {
+    width: 320px;
 }
 ::ng-deep mdc-text-field--outlined {
     --mdc-outlined-text-field-outline-width: 1px;
@@ -33,9 +35,10 @@
 .search-field {
   border-radius: 88px;
   height: 80%;
-  input {
+  ::ng-deep input {
     padding-left: 10px;
-    border: 2px solid red;
+    // border: 2px solid red;
+    height: 100px;
   }
   .serach-btn{
       color: white;
