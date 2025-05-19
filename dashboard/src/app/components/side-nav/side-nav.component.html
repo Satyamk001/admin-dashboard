@@ -11,29 +11,30 @@
     />
   </p>
   <ul class="nav-items-section">
-    <li class="nav-item" (click)="ActiveNavLink('dashboard')">
+    <li class="nav-item" (click)="ActiveNavLink('home')">
       <hr
-        [class.hide-active-indicator]="activeRoute !== 'dashboard'"
-        [class.active-route-indicator]="activeRoute === 'dashboard'"
+        [class.hide-active-indicator]="activeRoute !== 'home'"
+        [class.active-route-indicator]="activeRoute === 'home'"
       />
-      <img class="nav-item-icon" src="/assets/dashboard.svg" alt="Dashboard" />
-      <p class="nav-text">Dashboard</p>
+      <!-- <img class="nav-item-icon" src="/assets/dashboard.svg" alt="Dashboard" /> -->
+       <mat-icon [class.active-route-text]="activeRoute === 'home'">dashboard</mat-icon>
+      <p [class.active-route-text]="activeRoute === 'home'" class="nav-text">Dashboard</p>
     </li>
-    <li class="nav-item" (click)="ActiveNavLink('analytics')" a>
+    <li class="nav-item" (click)="ActiveNavLink('analytics')" >
       <hr
         [class.hide-active-indicator]="activeRoute !== 'analytics'"
         [class.active-route-indicator]="activeRoute === 'analytics'"
       />
-      <img
-        class="nav-item-icon"
-        src="/assets/bar-chart-svgrepo-com.svg"
-        alt="Analytics"
-      />
-      <p class="nav-text">Analytics</p>
+      <mat-icon [class.active-route-text]="activeRoute === 'analytics'">analytics</mat-icon>
+      <p [class.active-route-text]="activeRoute === 'analytics'" class="nav-text">Analytics</p>
     </li>
-    <li class="nav-item">
-      <img class="nav-item-icon" src="/assets/wallet.svg" alt="Wallet" />
-      <p class="nav-text">Wallet</p>
+    <li class="nav-item" (click)="ActiveNavLink('subscription')">
+      <hr
+        [class.hide-active-indicator]="activeRoute !== 'subscription'"
+        [class.active-route-indicator]="activeRoute === 'subscription'"
+      />
+      <mat-icon [class.active-route-text]="activeRoute === 'subscription'">subscriptions</mat-icon>
+      <p [class.active-route-text]="activeRoute === 'subscription'" class="nav-text">Subscription</p>
     </li>
     <li class="nav-item">
       <img
@@ -41,7 +42,7 @@
         src="/assets/logout-svgrepo-com.svg"
         alt="Logout"
       />
-      <p class="nav-text">Logout</p>
+      <p  class="nav-text">Logout</p>
     </li>
   </ul>
 </div>

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class SideNavComponent {
   sidebarExpandable = true;
-  activeRoute : any = 'dashboard';
+  activeRoute : any = 'home';
    ActiveNavLink(routeName:string): void{
     this.activeRoute = routeName;
     
