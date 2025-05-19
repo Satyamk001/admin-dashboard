@@ -1,7 +1,4 @@
- .mat-body p, .mat-body-2 p, .mat-typography .mat-body p, .mat-typography .mat-body-2 p,.mat-typography p {
-    margin: 0; 
-}
-nav {
+.sideNav {
     position: sticky;
     left: 0px;
     top: 0px;
@@ -13,9 +10,10 @@ nav {
     height: 96vh;
     transition: width 0.3s;
 
-    p {
-      margin-bottom: 0;
-        img {
+    .hamburger-icon {
+        margin-bottom: 0;
+
+        .icon {
             width: 20px;
             margin: 61px 0px 40px 10px;
             cursor: pointer;
@@ -28,13 +26,12 @@ nav {
         gap: 10px;
         cursor: pointer;
 
-        img {
+        .company-logo {
             width: 54px;
             border-radius: 18px;
-
         }
 
-        h1 {
+        .company-name {
             font-size: 20px;
             color: white;
             font-weight: 600;
@@ -45,31 +42,45 @@ nav {
         }
     }
 
-    ul {
+    .nav-items-section {
         list-style-type: none;
         color: #656565;
         display: flex;
         flex-direction: column;
         gap: 30px;
 
-        li {
+        .nav-item {
             display: flex;
             align-items: center;
             gap: 15px;
             margin-left: 10px;
             cursor: pointer;
             font-weight: 500;
+            position: relative;
+
+            .active-route-indicator {
+                position: fixed;
+                height: 4px;
+                width: 25px;
+                background-color: white;
+                border: none;
+                transform: rotate(90deg);
+                left: 2px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+            }
 
             &:hover {
                 color: white;
                 transition: color 0.3s ease;
             }
 
-            img {
+            .nav-item-icon {
                 width: 20px;
             }
 
-            p {
+            .nav-text {
+                margin-bottom: 0px;
                 font-size: 15px;
                 transition: width 0.3s ease;
                 overflow: hidden;
@@ -93,20 +104,18 @@ nav {
     width: 90px;
 
     .logo {
-        h1 {
+        .company-name {
             width: 0;
             opacity: 0;
         }
     }
 
-    ul {
-
-        li {
-            p {
+    .nav-items-section {
+        .nav-item {
+            .nav-text {
                 width: 0;
                 opacity: 0;
             }
         }
     }
-
 }
