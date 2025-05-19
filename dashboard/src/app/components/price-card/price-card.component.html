@@ -1,1 +1,30 @@
-<p>price-card works!</p>
+<!-- <div class="course-card" [ngClass]="status.toLowerCase()">
+  <div class="icon">
+    <mat-icon>{{ icon }}</mat-icon>
+  </div>
+  <div class="info">
+    <h3>{{ name }}</h3>
+    <p>{{ shortName }} </p>
+    <ng-container *ngIf="status === 'Trade'; else inProgress">
+      <p>{{ grade }} Final grade</p>
+    </ng-container>
+    <ng-template #inProgress>
+      <div class="progress-bar">
+        <div class="filled" [style.width.%]="progress"></div>
+      </div>
+      <p>{{ progress }}%</p>
+    </ng-template>
+  </div>
+  <div class="status">
+    <span [ngClass]="{ 'completed': status === 'Trade', 'in-progress': status === 'Not-Allowed' }">
+      {{ status }}
+    </span>
+  </div>
+</div> -->
+
+<div class="course-card">
+      <div class="info">
+            <h1>{{name}}</h1>
+      </div> 
+      <h2>{{name2}}</h2>
+</div>
