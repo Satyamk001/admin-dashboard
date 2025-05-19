@@ -1,13 +1,47 @@
-<div class="sideNav" [ngClass]="{'sidebar-expand':sidebarExpandable}">
-    <div class="logo">
-        <img class="company-logo" src="/assets/logo.png" alt="Company Logo">
-        <h1 class="company-name">Company</h1>
-    </div>
-    <p class="hamburger-icon" (click)="sidebarExpandable=!sidebarExpandable"><img class="icon" src="/assets/menu-burger-horizontal-svgrepo-com.svg" alt="Hamburger icon"></p>
-    <ul class="nav-items-section">
-        <li class="nav-item"><hr class="active-route-indicator"/><img class="nav-item-icon" src="/assets/dashboard.svg" alt="Dashboard"><p class="nav-text">Dashboard</p> </li>
-        <li class="nav-item"><img class="nav-item-icon" src="/assets/bar-chart-svgrepo-com.svg" alt="Analytics"> <p class="nav-text">Analytics</p></li>
-        <li class="nav-item"><img class="nav-item-icon" src="/assets/wallet.svg" alt="Wallet"><p class="nav-text">Wallet</p> </li>
-        <li class="nav-item"><img class="nav-item-icon" src="/assets/logout-svgrepo-com.svg" alt="Logout"><p class="nav-text">Logout</p></li>
-    </ul>
+<div class="sideNav" [ngClass]="{ 'sidebar-expand': sidebarExpandable }">
+  <div class="logo">
+    <img class="company-logo" src="/assets/logo.png" alt="Company Logo" />
+    <h1 class="company-name">Company</h1>
+  </div>
+  <p class="hamburger-icon" (click)="sidebarExpandable = !sidebarExpandable">
+    <img
+      class="icon"
+      src="/assets/menu-burger-horizontal-svgrepo-com.svg"
+      alt="Hamburger icon"
+    />
+  </p>
+  <ul class="nav-items-section">
+    <li class="nav-item" (click)="ActiveNavLink('dashboard')">
+      <hr
+        [class.hide-active-indicator]="activeRoute !== 'dashboard'"
+        [class.active-route-indicator]="activeRoute === 'dashboard'"
+      />
+      <img class="nav-item-icon" src="/assets/dashboard.svg" alt="Dashboard" />
+      <p class="nav-text">Dashboard</p>
+    </li>
+    <li class="nav-item" (click)="ActiveNavLink('analytics')" a>
+      <hr
+        [class.hide-active-indicator]="activeRoute !== 'analytics'"
+        [class.active-route-indicator]="activeRoute === 'analytics'"
+      />
+      <img
+        class="nav-item-icon"
+        src="/assets/bar-chart-svgrepo-com.svg"
+        alt="Analytics"
+      />
+      <p class="nav-text">Analytics</p>
+    </li>
+    <li class="nav-item">
+      <img class="nav-item-icon" src="/assets/wallet.svg" alt="Wallet" />
+      <p class="nav-text">Wallet</p>
+    </li>
+    <li class="nav-item">
+      <img
+        class="nav-item-icon"
+        src="/assets/logout-svgrepo-com.svg"
+        alt="Logout"
+      />
+      <p class="nav-text">Logout</p>
+    </li>
+  </ul>
 </div>
