@@ -14,6 +14,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { AnalyticsComponent } from './pages/analytics/analytics.component';
 import { SubscriptionComponent } from './pages/subscription/subscription.component';
 import { PriceCardComponent } from './components/price-card/price-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { PriceCardComponent } from './components/price-card/price-card.component
     MatIconModule,
     MatButtonModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

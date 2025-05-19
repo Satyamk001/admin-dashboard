@@ -8,8 +8,9 @@ import { Component, Input } from '@angular/core';
 export class PriceCardComponent {
   @Input() icon!: string;
   @Input() name!: string;
-  @Input() name2!: string;
-  @Input() progress!: number;
-  @Input() grade?: string;
-  @Input() status!: 'Trade' | 'Not-Allowed';
+  @Input() shortName!: string;
+  @Input() price!: string;
+  @Input() change!: string;
+
+  @Input() button!: string;
 }
