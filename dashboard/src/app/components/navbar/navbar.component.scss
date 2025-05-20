@@ -7,11 +7,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 24px;
+  padding: 12px 12px;
   background-color: #1a1a1a;
   margin-left: 90px;
+  // width: 100vw;
 
-  // width: calc(100vw - 250px);
+  width: calc(100vw - 128px);
   .company-logo {
     display: none;
   }
@@ -94,11 +95,16 @@
     }
   }
 }
-
+@media(max-width: 768px){
+  .navbar-container{
+    width: 100vw;
+  }
+}
 @media(max-width:500px) {
   .navbar-container {
     margin-left: 0px;
     padding: 12px 0px;
+    width: calc(100vw - 40px);
 
     .company-logo {
       display: block;

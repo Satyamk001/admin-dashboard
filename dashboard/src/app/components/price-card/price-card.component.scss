@@ -3,7 +3,8 @@
   align-items: center;
   justify-content: space-between;
   background: white;
-  padding: 1rem;
+  padding: .5rem 1rem;
+  
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   width:98%;
@@ -26,7 +27,7 @@
       h3 {
         margin: 0;
         font-weight: 500;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
       .short {
         color: gray;
@@ -38,9 +39,14 @@
 
   .center-section {
     text-align: center;
-    padding-top: 18px;
+    // padding-top: 18px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 36%;
+    justify-content: space-between;
     .price {
-      font-size: 1.1rem;
+      font-size: 1.0rem;
       font-weight: 500;
     }
     .change {
@@ -52,17 +58,20 @@
         color: green;
       }
     }
+   
   }
 
   .right-section {
     display: flex;
     align-items: center;
+    background-color: #1a1a1a;
 
     .chart-img {
-      width: 120px;
-      height: 40px;
+      width: 60px;
+      height: 30px;
       object-fit: cover;
-      margin-right: 1rem;
+      // margin-right: 1rem;
+      color: #1a1a1a ;
     }
 
     .trade-button {
