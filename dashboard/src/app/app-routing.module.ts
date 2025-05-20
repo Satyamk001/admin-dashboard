@@ -5,7 +5,8 @@ import { AnalyticsComponent } from './pages/analytics/analytics.component';
 import { SubscriptionComponent } from './pages/subscription/subscription.component';
 
 const routes: Routes = [
-  {path:'home', component:HomeComponent},
+  { path: 'home', component: HomeComponent },
+  {path:'', component:HomeComponent},
   {path:'analytics',component:AnalyticsComponent},
   {path:'subscription',component:SubscriptionComponent}
 ];
