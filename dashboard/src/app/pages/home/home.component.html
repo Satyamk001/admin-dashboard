@@ -3,58 +3,59 @@
         <app-navbar class="content" [title]="'Home'"></app-navbar>
     </div>
     <div class="banner-container">
-    <div class="home-banner">
-        <h1 class="banner-heading">Redefining Digital Ownership in the Decentralized Era.</h1>
-    </div>
-    </div>
-    <div class="main-section">
-        <div class="wallet">
-            <div class="first-row">
-                <p class="wallet-heading">Wallet</p>
-                <mat-icon class="refresh-icon">refresh</mat-icon>
-            </div>
-            <h1 class="wallet-info">{{walletPrice}}</h1>
-            <div class="wallet-buttons">
-                <div class="button-individual">
-                    <button class="wallet-button"><mat-icon>arrow_upward</mat-icon>
-                    </button>
-                    <p>Send</p>
-                </div>
-                <div class="button-individual">
-                    <button class="wallet-button"><mat-icon>arrow_downward</mat-icon>
-                    </button>
-                    <p>Receive</p>
-                </div>
-                <div class="button-individual">
-                    <button class="wallet-button"><mat-icon>sync_alt</mat-icon></button>
-                    <p>Swap</p>
-                </div>
-                <div class="button-individual">
-                    <button class="wallet-button"> <mat-icon>shopping_cart</mat-icon>
-                    </button>
-                    <p>Buy & Sell</p>
-                </div>
-            </div>
+        <div class="home-banner">
+            <h1 class="banner-heading">Redefining Digital Ownership in the Decentralized Era.</h1>
         </div>
-
-
-
-
-        <div class="trending-coins">
-            <div class="section-header">
-                <div class="section-left">
-                    <h1>Explore More</h1>
+    </div>
+    <div class="main-section-container">
+        <div class="main-section">
+            <div class="empty-space"></div>
+            <div class="right-space">
+                <div class="wallet">
+                    <div class="first-row">
+                        <p class="wallet-heading">Wallet</p>
+                        <mat-icon class="refresh-icon">refresh</mat-icon>
+                    </div>
+                    <h1 class="wallet-info">{{walletPrice}}</h1>
+                    <div class="wallet-buttons">
+                        <div class="button-individual">
+                            <button class="wallet-button"><mat-icon>arrow_upward</mat-icon>
+                            </button>
+                            <p>Send</p>
+                        </div>
+                        <div class="button-individual">
+                            <button class="wallet-button"><mat-icon>arrow_downward</mat-icon>
+                            </button>
+                            <p>Receive</p>
+                        </div>
+                        <div class="button-individual">
+                            <button class="wallet-button"><mat-icon>sync_alt</mat-icon></button>
+                            <p>Swap</p>
+                        </div>
+                        <div class="button-individual">
+                            <button class="wallet-button"> <mat-icon>shopping_cart</mat-icon>
+                            </button>
+                            <p>Buy & Sell</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="section-right">
-                    View All
-                </div>
-            </div>
-            <div *ngFor="let crypto of cryptocurrencies">
-                <app-price-card [icon]="crypto.icon" [name]="crypto.name" [shortName]="crypto.shortName"
-                    [price]="crypto.price" [change]="crypto.change" [button]="crypto.button">
-                </app-price-card>
-            </div>
+                <!-- <div class="trending-coins">
+                    <div class="section-header">
+                        <div class="section-left">
+                            <h1>Explore More</h1>
+                        </div>
+                        <div class="section-right">
+                            View All
+                        </div>
+                    </div>
+                    <div *ngFor="let crypto of cryptocurrencies">
+                        <app-price-card [icon]="crypto.icon" [name]="crypto.name" [shortName]="crypto.shortName"
+                            [price]="crypto.price" [change]="crypto.change" [button]="crypto.button">
+                        </app-price-card>
+                    </div>
 
+                </div> -->
+            </div>
         </div>
     </div>
 </section>

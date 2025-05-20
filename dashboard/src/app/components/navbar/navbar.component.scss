@@ -2,14 +2,7 @@
   --mdc-filled-text-field-active-indicator-height: 0px !important;
   --mdc-filled-text-field-focus-active-indicator-height: 0px !important;
 }
- @keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -17,9 +10,11 @@
   padding: 12px 12px;
   background-color: #1a1a1a;
   margin-left: 90px;
+  padding-left: 26px;
   // width: 100vw;
 
   width: calc(100vw - 128px);
+
   .company-logo {
     display: none;
   }
@@ -45,26 +40,31 @@
     }
 
     .wallet-button-container {
- 
-  
-  
 
-  .wallet-button {
-    position: relative; 
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    justify-content: space-between;
-    background-color: #020618;
-    border-radius: 18px;
-    border: 1px solid #545090;
-    color: white;
-    padding: 10px 30px;
-    font-size: 16px;
-    z-index: 1;
-  }
-}
+      .small-screen-wallet {
+        display: none;
+      }
+
+      .wallet-button {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        justify-content: space-between;
+        background-color: #020618;
+        border-radius: 18px;
+        border: 1px solid #545090;
+        color: white;
+        padding: 10px 30px;
+        font-size: 16px;
+        z-index: 1;
+
+        p {
+          margin-bottom: 0px;
+        }
+      }
+    }
 
 
     mat-icon {
@@ -128,11 +128,52 @@
     }
   }
 }
-@media(max-width: 768px){
-  .navbar-container{
+
+@media(max-width: 768px) {
+  .navbar-container {
     width: 100vw;
   }
 }
+
+@media(max-width:640px) {
+  .navbar-container {
+    .actions {
+      .wallet-button-container {
+        .wallet-button {
+          position: relative;
+          cursor: pointer;
+          display: none;
+          align-items: center;
+          gap: 3px;
+          justify-content: space-between;
+          background-color: #020618;
+          border-radius: 18px;
+          border: 1px solid #545090;
+          color: white;
+          padding: 10px 30px;
+          font-size: 16px;
+          z-index: 1;
+        }
+
+        .small-screen-wallet {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #2b2b2b;
+          border-radius: 50%;
+          background-color: #2b2b2b;
+          mat-icon{
+            margin-right: 0px ;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media(max-width:500px) {
   .navbar-container {
     margin-left: 0px;
@@ -219,4 +260,15 @@
       }
     }
   }
+}
+
+@media(max-width:400px){
+      .navbar-container{
+         .title{
+        display: none;
+        font-size: 25px;
+        font-weight: 600;
+        color: #c0c0c2;
+        margin-left: -30px;}
+    }
 }
