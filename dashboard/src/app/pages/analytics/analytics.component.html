@@ -2,4 +2,28 @@
     <div class="navbar">
         <app-navbar class="content" [title]="'Analytics'"></app-navbar>
     </div>
+    <div class="content-container">
+        <div style="width: 100px; height: 100vh;" class="empty-space"></div>
+        <div class="main-section">
+            <div class="graph-container">
+                <h3 class="price-history">Price History</h3>
+                <div class="under-price">
+                    <h1 class="price">{{currency}} {{price}}</h1>
+                    <div class="time-container">
+                        <p *ngFor="let duration of durationArray" class="duration">{{duration}}</p>                        
+                    </div>
+                </div>
+                <div class="volume-container"><span>Vol</span><span>{{volume}}</span><span>{{cryptoCurrency}}</span></div>
+                <img class="graph-image" src="/assets/graph-sample-img.png" alt="Graph Sample Image">
+            </div>
+             <div class="crypto-info">
+                <div class="crypto-name">
+                <img [src]="cryptoImage" width="40px" alt="Crypto Logo">
+                <h1>Bitcoin</h1>
+                <p>BTC</p>
+                </div>
+                <p class="crypto-desc">Bitcoin (BTC) is a decentralized currency that eliminates the need for central authorities such as banks or governments by using a peer-to-peer internet network to confirm transactions directly between users.</p>
+             </div>
+        </div>
+    </div>
 </section>

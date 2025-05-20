@@ -11,4 +11,101 @@
             // overflow-x: hidden;
         }
     }
+
+
+    .content-container {
+        display: flex;
+        gap: 30px;
+
+        .main-section {
+            flex: 1;
+            display: flex;
+            gap: 40px;
+
+            .graph-container {
+                width: 800px;
+
+                .price-history {
+                    color: white;
+                    font-size: 16px;
+                }
+
+                .under-price {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+
+                    .price {
+                        font-size: 34px;
+                        color: white;
+                        font-family: 'Mona Sans';
+                        font-weight: 600;
+                    }
+
+                    .time-container {
+                        display: flex;
+                        align-items: center;
+
+                        // gap: 20px;
+                        p {
+                            font-size: 16px;
+                            color: white;
+                            cursor: pointer;
+                            margin-right: 30px;
+                            font-weight: 400;
+
+                            &:hover {
+                                font-weight: 550;
+                            }
+                        }
+                    }
+                }
+
+                .volume-container {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    color: white;
+                    font-size: 16px;
+                }
+
+                .graph-image {
+                    width: 800px;
+                    margin-top: 15px;
+                    object-fit: cover;
+                }
+            }
+            .crypto-info{
+                margin-top: 50px;
+                .crypto-name{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    h1{
+                        font-size: 30px;
+                        color: white;
+                        margin-bottom: 0px;
+                        font-weight: 600;
+                    }
+                    p{
+                        font-size: 16px;
+                        color: #f4c3a0;
+                        margin-bottom: 0px;
+                        margin-top: 7.5px;
+                    }
+                }
+                .crypto-desc{
+                    color: white;
+                    margin-top: 30px;
+                    width: 211px;
+                }
+            }
+        }
+
+    }
+
+
+
+
+
 }
